@@ -1,0 +1,96 @@
+*{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(90, 100, 108);
+    margin: 0;
+}
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(100, 127, 151);
+    padding: 20px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgb(211, 231, 249);
+    height: 600px;
+    width: 400px;
+
+}
+.display{
+    height: 90px;
+    font-size: 40px;
+    width: 90%;
+    padding: 20px;
+    border: none;
+    background-color: rgb(241, 239, 239);
+    color: rgb(52, 48, 48);
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: right;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.buttons {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(241, 239, 239);
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    height: 60px;
+  }
+
+  button:hover {
+    background-color:rgb(90, 100, 108);
+    color: white;
+    cursor: pointer;
+  }
+  button:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .percentage,.slash,.star,.minus,.plus {
+    background-color: #f5b65c;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .percentage.active {
+    background-color: #ffcc80;
+    box-shadow: 0 4px 10px rgba(255, 204, 128, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .zero {
+    flex-grow: 0.9;  
+}
+  .eqauls {
+    background-color: rgb(29, 183, 67);
+    color: white;
+  }
+  .eqauls:hover {
+    background-color: rgba(96, 234, 131, 0.63);
+  }
